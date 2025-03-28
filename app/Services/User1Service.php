@@ -11,6 +11,14 @@ class User1Service {
     */
     public $baseUri;
     public function __construct() {
-        $this->baseUri = config('services.users1.base_uri');
+        $this->baseUri = config('USERS1_SERVICE_BASE_URL');
+    }
+
+    /**
+    * Obtain the full list of Users from User1 Site
+    * @return string
+    */
+    public function obtainUsers1() {
+        return $this->performRequest('GET','/users1'); //<—this code will call the GET localhost:8001/users (our site1)
     }
 }

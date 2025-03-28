@@ -25,8 +25,6 @@ $app = require __DIR__.'/../bootstrap/app.php';
 |
 */
 
-<<<<<<< HEAD
-=======
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Authorization');
@@ -35,6 +33,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit();
 }
 
-
->>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
 $app->run();
