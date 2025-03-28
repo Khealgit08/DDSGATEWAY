@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "8f6d641cd519a465867cc5aef334af18",
+=======
+    "content-hash": "92349cb28edd03fc664907cf9290705c",
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
     "packages": [
         {
             "name": "brick/math",
@@ -370,6 +374,7 @@
         },
         {
             "name": "egulias/email-validator",
+<<<<<<< HEAD
             "version": "4.0.4",
             "source": {
                 "type": "git",
@@ -380,6 +385,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa",
                 "reference": "d42c8731f0624ad6bdc8d3e5e9a4524f68801cfa",
+=======
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egulias/EmailValidator.git",
+                "reference": "b115554301161fa21467629f1e1391c1936de517"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b115554301161fa21467629f1e1391c1936de517",
+                "reference": "b115554301161fa21467629f1e1391c1936de517",
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
                 "shasum": ""
             },
             "require": {
@@ -425,7 +442,11 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/egulias/EmailValidator/tree/4.0.4"
+=======
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.3"
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
             },
             "funding": [
                 {
@@ -433,7 +454,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-03-06T22:45:56+00:00"
+=======
+            "time": "2024-12-27T00:36:43+00:00"
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
         },
         {
             "name": "fruitcake/php-cors",
@@ -569,6 +594,7 @@
             "time": "2024-07-20T21:45:45+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "guzzlehttp/guzzle",
             "version": "7.9.3",
             "source": {
@@ -894,6 +920,8 @@
             "time": "2025-03-27T12:30:47+00:00"
         },
         {
+=======
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
             "name": "guzzlehttp/uri-template",
             "version": "v1.0.4",
             "source": {
@@ -2709,6 +2737,7 @@
         },
         {
             "name": "monolog/monolog",
+<<<<<<< HEAD
             "version": "3.9.0",
             "source": {
                 "type": "git",
@@ -2719,6 +2748,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Seldaek/monolog/zipball/10d85740180ecba7896c87e06a166e0c95a0e3b6",
                 "reference": "10d85740180ecba7896c87e06a166e0c95a0e3b6",
+=======
+            "version": "3.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "aef6ee73a77a66e404dd6540934a9ef1b3c855b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/aef6ee73a77a66e404dd6540934a9ef1b3c855b4",
+                "reference": "aef6ee73a77a66e404dd6540934a9ef1b3c855b4",
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
                 "shasum": ""
             },
             "require": {
@@ -2796,7 +2837,11 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/Seldaek/monolog/tree/3.9.0"
+=======
+                "source": "https://github.com/Seldaek/monolog/tree/3.8.1"
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
             },
             "funding": [
                 {
@@ -2808,7 +2853,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-03-24T10:02:05+00:00"
+=======
+            "time": "2024-12-05T17:15:07+00:00"
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
         },
         {
             "name": "nesbot/carbon",
@@ -3279,6 +3328,7 @@
             "time": "2019-01-08T18:20:26+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "psr/http-client",
             "version": "1.0.3",
             "source": {
@@ -3439,6 +3489,8 @@
             "time": "2023-04-04T09:54:51+00:00"
         },
         {
+=======
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
             "name": "psr/log",
             "version": "3.0.2",
             "source": {
@@ -3540,6 +3592,7 @@
             "time": "2021-10-29T13:26:27+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -3595,6 +3648,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/ramsey/collection/zipball/344572933ad0181accbf4ba763e85a0306a8c5e2",
                 "reference": "344572933ad0181accbf4ba763e85a0306a8c5e2",
+=======
+            "name": "ramsey/collection",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/collection.git",
+                "reference": "3c5990b8a5e0b79cd1cf11c2dc1229e58e93f109"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/3c5990b8a5e0b79cd1cf11c2dc1229e58e93f109",
+                "reference": "3c5990b8a5e0b79cd1cf11c2dc1229e58e93f109",
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
                 "shasum": ""
             },
             "require": {
@@ -3655,9 +3721,15 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/collection/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/ramsey/collection/tree/2.1.1"
             },
             "time": "2025-03-22T05:38:12+00:00"
+=======
+                "source": "https://github.com/ramsey/collection/tree/2.1.0"
+            },
+            "time": "2025-03-02T04:48:29+00:00"
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
         },
         {
             "name": "ramsey/uuid",
