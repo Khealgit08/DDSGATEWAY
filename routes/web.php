@@ -18,6 +18,8 @@ $router->get('/', function () use ($router) {
 // unsecure routes
 
 $router->group(['prefix' => 'api'], function () use ($router) {
+    $router->get('/users1',['uses' => 'User1Controller@getUsers']);
+    $router->get('/users1',['uses' => 'User1Controller@getUsers']);
     $router->get('/users1', 'User1Controller@index'); // get all usersrecords
     $router->post('/users1', 'User1Controller@add'); // create new userrecord
     $router->get('/users1/{id}', 'User1Controller@show'); // get user by id
@@ -27,6 +29,8 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 });
 
 $router->group(['prefix' => 'api'], function () use ($router) {
+    $router->get('/users2',['uses' => 'User2Controller@getUsers']);
+    $router->get('/users2',['uses' => 'User2Controller@getUsers']);
     $router->get('/users2', 'User2Controller@index'); // get all usersrecords
     $router->post('/users2', 'User2Controller@add'); // create new userrecord
     $router->get('/users2/{id}', 'User2Controller@show'); // get user by id
