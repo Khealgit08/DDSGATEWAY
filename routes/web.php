@@ -1,4 +1,7 @@
 <?php
+
+use App\Http\Controllers\UserController;
+
 /** @var \Laravel\Lumen\Routing\Router $router */
 /*
 |---------------------------------------------------------------------
