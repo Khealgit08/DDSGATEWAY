@@ -94,6 +94,7 @@ $app->routeMiddleware([
 $app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
 $app->register(App\Providers\EventServiceProvider::class);
+$app->register(App\Providers\RouteServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
@@ -112,7 +113,6 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
-$app->register(App\Providers\RouteServiceProvider::class);
 $app->register(Laravel\Lumen\Routing\RoutingServiceProvider::class);
 
 return $app;
