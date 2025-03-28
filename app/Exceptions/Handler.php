@@ -2,13 +2,10 @@
 
 namespace App\Exceptions;
 
-<<<<<<< HEAD
-=======
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
->>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Validation\ValidationException;
@@ -16,15 +13,9 @@ use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
 
-<<<<<<< HEAD
-class Handler extends ExceptionHandler
-{
-=======
-class Handler extends ExceptionHandler{
-
+class Handler extends ExceptionHandler {
     use ApiResponser;
 
->>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
     /**
      * A list of the exception types that should not be reported.
      *
@@ -47,8 +38,7 @@ class Handler extends ExceptionHandler{
      *
      * @throws \Exception
      */
-    public function report(Throwable $exception)
-    {
+    public function report(Throwable $exception){
         parent::report($exception);
     }
 
@@ -61,12 +51,9 @@ class Handler extends ExceptionHandler{
      *
      * @throws \Throwable
      */
-    public function render($request, Throwable $exception)
-    {
-<<<<<<< HEAD
+    public function render($request, Throwable $exception){
         return parent::render($request, $exception);
     }
-=======
     // http not found
     if ($exception instanceof HttpException) {
         $code = $exception->getStatusCode();
@@ -97,5 +84,4 @@ class Handler extends ExceptionHandler{
     }
         return $this->errorResponse('Unexpected error. Try later',Response::HTTP_INTERNAL_SERVER_ERROR);
     }
->>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
 }
