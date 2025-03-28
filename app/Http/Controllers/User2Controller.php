@@ -10,8 +10,8 @@ use Illuminate\Http\JsonResponse;
 use DB;
 
 
-class UserController extends Controller {
-
+class User2Controller extends Controller {
+    /*
     use ApiResponser;
 
     private $request;
@@ -31,6 +31,7 @@ class UserController extends Controller {
     * Return the list of users
     * @return Illuminate\Http\Response
     */
+    /*
     public function index()
     {
         $users = User::all();
@@ -52,6 +53,7 @@ class UserController extends Controller {
     * Obtains and show one user
     * @return Illuminate\Http\Response
     */
+    /*
     public function show($id){
         $user = User::findOrFail($id);
         return $this->successResponse($user);
@@ -69,6 +71,7 @@ class UserController extends Controller {
     * Update an existing author
     * @return Illuminate\Http\Response
     */
+    /*
     public function update(Request $request,$id){
         $rules = [
             'username' => 'max:20',
@@ -106,6 +109,7 @@ class UserController extends Controller {
     * Remove an existing user
     * @return Illuminate\Http\Response
     */
+    /*
     public function delete($id){
         $user = User::findOrFail($id);
         $user->delete();
@@ -119,5 +123,5 @@ class UserController extends Controller {
         {
             return $this->errorResponse('User ID Does Not Exists', Response::HTTP_NOT_FOUND);
         }
-    }
+    }*/
 }
