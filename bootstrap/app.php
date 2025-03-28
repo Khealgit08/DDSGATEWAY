@@ -23,9 +23,15 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
+<<<<<<< HEAD
 // $app->withFacades();
 
 // $app->withEloquent();
+=======
+$app->withFacades();
+
+$app->withEloquent();
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
 
 /*
 |--------------------------------------------------------------------------
@@ -72,6 +78,7 @@ $app->configure('app');
 |
 */
 
+<<<<<<< HEAD
 // $app->middleware([
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
@@ -79,6 +86,15 @@ $app->configure('app');
 // $app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
 // ]);
+=======
+$app->middleware([
+    App\Http\Middleware\ExampleMiddleware::class
+]);
+
+$app->routeMiddleware([
+    'auth' => App\Http\Middleware\Authenticate::class,
+]);
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
 
 /*
 |--------------------------------------------------------------------------
@@ -91,9 +107,15 @@ $app->configure('app');
 |
 */
 
+<<<<<<< HEAD
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
+=======
+$app->register(App\Providers\AppServiceProvider::class);
+$app->register(App\Providers\AuthServiceProvider::class);
+$app->register(App\Providers\EventServiceProvider::class);
+>>>>>>> 9205812dce7388f65852bf25d2dde0c04963bc99
 
 /*
 |--------------------------------------------------------------------------

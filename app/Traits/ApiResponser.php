@@ -14,6 +14,7 @@ trait ApiResponser{
         // return response()->json(['data' => $data, 'site' => 1], $code);
         // this code is changes since the message to return is already formatted by API responser of each site
         return response($data, $code)->header('Content-Type', 'application/json');
+        return response()->json(['data' => $data], $code);
     }
 
     /**
@@ -29,5 +30,7 @@ trait ApiResponser{
 
     public function errorMessage($message, $code){
         return response($message, $code)->header('Content-Type', 'application/json');
+    public function errorResponse($message, $code){
+        return response()->json(['error' => $message, 'code' => $code], $code);
     }
 }
