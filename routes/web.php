@@ -1,28 +1,20 @@
 <?php
+
+use App\Http\Controllers\UserController;
+
 /** @var \Laravel\Lumen\Routing\Router $router */
-/*
-|---------------------------------------------------------------------
------
-| Application Routes
-|---------------------------------------------------------------------
------
-|
-| Here is where you can register all of the routes for an application.
-| It is a breeze. Simply tell Lumen the URIs it should respond to
-| and give it the Closure to call when that URI is requested.
-|
-*/
+
+// Default route
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-// unsecure routes
+
+// API Routes
 $router->group(['prefix' => 'api'], function () use ($router) {
-    $router->get('/users',['uses' => 'UserController@getUsers']);
-    $router->get('/users',['uses' => 'UserController@getUsers']);
-    $router->get('/users', 'UserController@index'); // get all usersrecords
-    $router->post('/users', 'UserController@add'); // create new userrecord
-    $router->get('/users/{id}', 'UserController@show'); // get user by id
-    $router->put('/users/{id}', 'UserController@update'); // update userrecord
-    $router->patch('/users/{id}', 'UserController@update'); // update userrecord
-    $router->delete('/users/{id}', 'UserController@delete'); // deleterecord
+    $router->get('/users', 'UserController@index'); // Get all users
+    $router->post('/users', 'UserController@add'); // Create new user
+    $router->get('/users/{id}', 'UserController@show'); // Get user by ID
+    $router->put('/users/{id}', 'UserController@update'); // Update user
+    $router->patch('/users/{id}', 'UserController@update'); // Partial update
+    $router->delete('/users/{id}', 'UserController@delete'); // Delete user
 });

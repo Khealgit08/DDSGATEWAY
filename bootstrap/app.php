@@ -112,4 +112,7 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
+$app->register(App\Providers\RouteServiceProvider::class);
+$app->register(Laravel\Lumen\Routing\RoutingServiceProvider::class);
+
 return $app;
